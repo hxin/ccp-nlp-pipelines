@@ -280,12 +280,20 @@ public class EntityFinder {
 	public static void main(String[] args) throws UIMAException, IOException {
 		TypeSystemDescription tsd = createConceptMapperTypeSystem();
 
-		String inputDir = args[0];
-		String outputDir = args[1];
-		String ontology = args[2];
-		String oboPath = args[3];
-		String oboDir = args[4];
-		boolean cleanDictionaryFile = Boolean.parseBoolean(args[5]);
+//		String inputDir = args[0];
+//		String outputDir = args[1];
+//		String ontology = args[2];
+//		String oboPath = args[3];
+//		String oboDir = args[4];
+//		boolean cleanDictionaryFile = Boolean.parseBoolean(args[5]);
+
+
+		String inputDir = "/Users/xinhe/Documents/temp/cm/in/";
+		String outputDir = "/Users/xinhe/Documents/temp/cm/out/";
+		String ontology = "OBO";
+		String oboPath = "/Users/xinhe/Documents/temp/cm/obo/doid.obo";
+		String oboDir = "/Users/xinhe/Documents/temp/cm/obo";
+		boolean cleanDictionaryFile = Boolean.parseBoolean("TRUE");
 
 		System.out.println("Processing files from : " + inputDir + "\nWriting output files to: " + outputDir);
 
